@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Form</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: linear-gradient(135deg, #a78e3b, #ACB6E5);
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        form {
+          background: white;
+          padding: 20px 30px;
+          border-radius: 12px;
+          box-shadow: 0 6px 18px rgba(156, 85, 85, 0.2);
+          width: 300px;
+        }
+        label {
+          display: block;
+          margin: 10px 0 4px;
+          font-weight: bold;
+        }
+        input, select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 12px;
+          border: 1px solid #0c0909;
+          border-radius: 6px;
+        }
+        input[type="radio"] {
+          width: auto;
+          margin-right: 8px;
+        }
+        .radio-group {
+          margin-bottom: 12px;
+        }
+        button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 8px;
+          background: #4a90e2;
+          color: white;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #357ABD;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h2 style="text-align:center; color:#333;">Registration Form</h2>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <label>Date & Time:</label>
+    <input type="datetime-local">
+
+    <label>Upload File:</label>
+    <input type="file">
+
+    <!-- <label>Pick a Color:</label>
+    <input type="color">
+
+    <div class="radio-group">
+      <label><input type="radio" name="choice" value="1"> Choose 1</label><br>
+      <label><input type="radio" name="choice" value="2"> Choose 2</label><br>
+      <label><input type="radio" name="choice" value="3"> Choose 3</label>
+    </div> -->
+
+    <label for="Age">Select Age:</label>
+    <select id="Age">
+        <option value="12-15">12-15</option>
+        <option value="16-20">16-20</option>
+        <option value="21-above">21-above</option>
+    </select>
+
+    <label for="sports">Choose a Sport:</label>
+    <select id="sports">
+        <option value="football">Football</option>
+        <option value="cricket">Cricket</option>
+        <option value="badminton">Badminton</option>
+        <option value="basketball">Basketball</option>
+        <option value="gaming">Gaming</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
